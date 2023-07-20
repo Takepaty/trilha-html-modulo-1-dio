@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Projeto HTML</title>
+</head>
+
+<body>
+    <h1 id="home" style="color:rgb(57, 33, 37)">Tudo o que você precisa saber sobre HTML</h1>
+    <hr>
+    <hr>
+
+    <h2>Índice</h2>
+
+    <ul>
+        <li><a href="#html">O que é HTML?</a></li>
+        <li><a href="#elemento">As principais partes de um elemento</a></li>
+        <li><a href="#anatomia">Anatomia de um documento HTML</a></li>
+        <li><a href="#imagens">Imagens</a></li>
+        <li><a href="#marcacao">Marcando o Texto</a></li>
+        <li><a href="#paragrafo">Parágrafo</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#links">Links</a></li>
+    </ul>
+    <hr>
+
+    <h2 id="html" style="color:darkslategray"> Então, o que é HTML<small><sup>?</sup></small></h2>
+    <small><a href="#home">(home)</a></small>
+
+    <p><b>HTML</b> não é uma linguagem de programação; é uma linguagem de marcação, usada para definir a estrutura do
+        seu conteúdo. <b>HTML</b> consiste de uma série de elementos, que você usa para delimitar ou agrupar diferentes
+        partes do conteúdo para que ele apareça ou atue de determinada maneira. As tags anexas podem transformar uma
+        palavra ou imagem num hiperlink, pode colocar palavras em itálico, pode aumentar ou diminuir a fonte e assim por
+        diante.
+    </p>
+    <hr>
+    <h2 id="elemento" style="color:darkslategray">As principais partes de um elemento são: </h2>
+    <small><a href="#home">(home)</a></small>
+
+    <ol>
+        <li>
+            A tag de abertura: Consiste no nome do elemento <small><sup><b>(no caso, p)</b></sup></small>, envolvido em
+            parênteses angulares de abertura e fechamento. Isso demonstra onde o elemento começa, ou onde seu efeito se
+            inicia — nesse caso, onde é o começo do parágrafo.
+        </li>
+        <p></p>
+        <li>
+            A tag de fechamento: Isso é a mesma coisa que a tag de abertura, exceto que inclui uma barra antes do nome
+            do elemento. Isso demonstra onde o elemento acaba — nesse caso, onde é o fim do parágrafo. Esquecer de
+            incluir uma tag de fechamento é um dos erros mais comuns de iniciantes e pode levar a resultados estranhos.
+        </li>
+        <p></p>
+        <li>
+            O conteúdo: Esse é o conteúdo do elemento, que nesse caso é apenas texto.
+        </li>
+        <p></p>
+
+        <li>
+            O conteúdo: Esse é o conteúdo do elemento, que nesse caso é apenas texto.
+        </li>
+    </ol>
+    <hr>
+    <h2 id="anatomia" style="color:darkslategrey">Anatomia de um documento HTML</h2>
+    <small><a href="#home">(home)</a></small>
+
+    <p>Isso resume o básico dos elementos HTML individuais, mas eles não são úteis por si só. Agora vamos ver como
+        elementos individuais são combinados para formar uma página HTML inteira. Vamos visitar novamente os códigos que
+        colocamos no exemplo de index.html (que vimos no artigo Lidando com arquivos):</p>
+
+    <img src="image/codigohtml.png" alt="codigo html">
+
+    <h3><mark>Aqui nós temos:</mark></h3>
+    <ul>
+        <li>
+            &lt;!DOCTYPE html&gt; — o doctype. É a parte inicial obrigatória do documento. Nas névoas do tempo, quando o
+            HTML era novo (por volta de 1991/2), doctypes eram criados para agir como links para um conjunto de regras
+            que a página HTML tinha que seguir para ser considerada um bom HTML, o que poderia significar checagem
+            automática de erros e outras coisas úteis. No entanto, atualmente, eles não fazem muito sentido e são
+            basicamente necessários apenas para garantir que o documento se comporte corretamente. Isso é tudo que você
+            precisa saber agora.
+        </li>
+        <p></p>
+        <li>
+            &lt;html&gt; &lt;/html&gt; — o elemento &lt;html&gt;. Esse elemento envolve todo o conteúdo da página e às
+            vezes é conhecido como o elemento raiz.
+        </li>
+        <p></p>
+        <li>
+            &lt;head&gt; &lt;/head&gt; — o elemento &lt;head&gt;. Esse elemento age como um recipiente de tudo o que
+            você deseja incluir em uma página HTML que não é o conteúdo que você quer mostrar para quem vê sua página.
+            Isso inclui coisas como palavras-chave e uma descrição que você quer que apareça nos resultados de busca,
+            CSS para dar estilo ao conteúdo, declarações de conjuntos de caracteres e etc.
+        </li>
+        <p></p>
+        <li>
+            &lt;meta charset="utf-8"&gt; — esse elemento define o conjunto de caracteres que seu documento deve usar
+            para o UTF-8, que inclui praticamente todos os caracteres da grande maioria dos idiomas escritos.
+            Essencialmente, agora ele pode manipular qualquer conteúdo textual que você possa colocar. Não há razão para
+            não definir isso e assim pode ajudar a evitar alguns problemas no futuro.
+        </li>
+        <p></p>
+        <li>
+            &lt;title&gt; &lt;/title&gt; — o elemento &lt;title &gt;. Ele define o título da sua página, que é o título
+            que aparece na guia do navegador onde sua página é carregada. Ele também é usado para descrever a página
+            quando você a adiciona aos favoritos.
+        </li>
+        <p></p>
+        <li>
+            &lt; body&gt; &lt;/body&gt; — o elemento
+
+            <body>. Contém todo o conteúdo que você quer mostrar ao público que visita sua página, seja texto, imagens,
+                vídeos, jogos, faixas de áudio reproduzíveis ou qualquer outra coisa.
+        </li>
+    </ul>
+    <hr>
+
+    <h2 id="imagens" style="color:darkslategray"> Imagens</h2>
+    <small><a href="#home">(home)</a></small>
+
+    <h3>Vamos voltar nossa atenção para o elemento &lt;img&gt; novamente:</h3>
+
+    <p> <i>&lt;img src="images/firefox-icon.png" alt="Minha imagem de teste"&gt;</i> </p>
+    <p>Como dissemos antes, isso incorpora uma imagem na nossa página na posição que aparece. Isso é feito pelo atributo
+        src (source), que contém o caminho para nosso arquivo de imagem.</p>
+    <p>Incluímos também um atributo alt (alternative). Neste atributo, você especifica um texto descritivo para usuários
+        que não podem ver a imagem, possivelmente devido aos seguintes motivos:</p>
+
+    <ol>
+        <li>
+            Eles são deficientes visuais. Usuários com deficiências visuais significativas costumam usar ferramentas
+            chamadas leitores de tela para ler o texto alternativo para eles.
+        </li>
+        <p></p>
+        <li>
+            Algo deu errado, fazendo com que a imagem não seja exibida. Por exemplo, tente alterar deliberadamente o
+            caminho dentro do atributo src para torná-lo incorreto. Se você salvar e recarregar a página, você deve ver
+            algo assim no lugar da imagem:
+        </li>
+    </ol>
+    <img src="image/my test image.png">
+    <p></p>
+    <p>As palavras-chave para o texto alternativo são "texto descritivo". O texto alternativo que você escreve deve
+        fornecer ao leitor informações suficientes para ter uma boa ideia do que a imagem mostra. Neste exemplo, nosso
+        texto "Minha imagem teste" não é bom para todos. Uma alternativa muito melhor para o nosso logotipo do Firefox
+        seria "A logo do Firefox: uma raposa em chamas envolvendo a Terra."
+    </p>
+    <hr>
+
+    <h2 id="marcacao">Marcando o texto</h2>
+    <small><a href="#home">(home)</a></small>
+
+    <p>Essa seção abordará alguns dos elementos HTML essenciais que você usará para marcar o texto.</p>
+
+
+    <h2><i>Cabeçalhos</i></h3>
+
+
+        <p>Os elementos de cabeçalhos permitem especificar que certas partes do seu conteúdo são títulos ou subtítulos.
+            Da
+            mesma forma que um livro tem o título principal e os capítulos possuem títulos e subtítulos, um documento
+            HTML
+            também tem. HTML contém 6 níveis de título, &lt;h1&gt; (en-US) - &lt;h6&gt; (en-US), embora você normalmente
+            só
+            use de 3 a 4:</p>
+
+        <img src="image/cabecalho.png">
+        <hr>
+
+        <h2 id="paragrafo" style="color:darkslategray"> Parágrafo</h2>
+        <p>
+            Como explicado acima, os elementos &lt;p&gt; são para conter parágrafos de texto; você os usará com
+            frequência
+            ao marcar um conteúdo de texto regular:
+        </p>
+        <hr>
+
+        <h2 id="listas" style="color:darkslategray"> Listas</h2>
+        <small><a href="#home">(home)</a></small>
+
+        <p>Muito do conteúdo da web é de listas e o HTML tem elementos especiais para elas. Listas de marcação sempre
+            consistem em pelo menos 2 elementos. Os tipos mais comuns de lista são ordenadas e não ordenadas:</p>
+
+        <p>
+        <ol>
+            <li>
+                Listas não ordenadas são para listas onde a ordem dos itens não importa, como uma lista de compras, por
+                exemplo. Essas são envolvidas em um elemento &lt;ul&gt;.
+            </li>
+            <p></p>
+            <li>
+                Listas Ordenadas são para listas onde a ordem dos itens importa, como uma receita. Essas são envolvidas
+                em
+                um elemento &lt;ol&gt;.
+            </li>
+        </ol>
+        </p>
+
+        <p>
+            Cada item dentro das listas é posto dentro de um elemento &lt;li&gt; (item de lista).
+        </p>
+
+        <p>
+            Por exemplo, se nós quisermos tornar uma parte de um parágrafo numa lista:
+        </p>
+
+        <img src="image/paragrafo.png">
+
+        <p><i><b>Nós podemos fazer assim:</b></i></p>
+        <img src="image/paragrafolista.png">
+        <hr>
+
+        <h2 id="links" style="color:darkslategray"> Links</h2>
+        <small><a href="#home">(home)</a></small>
+
+        <p>
+            Links são muito importantes — eles são o que faz da web ser de fato uma REDE! Para adicionar um link,
+            precisamos
+            usar um elemento simples — &lt;a&gt; — "a" é a forma abreviada de "âncora". Para transformar o texto do seu
+            parágrafo em um link, siga estas etapas:
+        </p>
